@@ -28,7 +28,6 @@ class UsersController < ApplicationController
   end
 
   def followings
-    binding.pry
     @user = User.find(params[:id])
     @pagy, @followings = pagy(@user.followings)
     counts(@user)
