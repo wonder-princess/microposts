@@ -2,9 +2,14 @@ class RelationshipsController < ApplicationController
   before_action :require_user_logged_in
 
   def create
+    
+    p "*"*30
+    p params
+    p "*"*30
+    
     user = User.find(params[:follow_id])
     current_user.follow(user)
-    flash[:success] = 'フォローしました'
+    flash[:success] = 'フォローしました。'
     redirect_to user
   end
 
