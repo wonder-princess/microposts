@@ -1,24 +1,28 @@
-# README
+◆サイト概要
+タイムライン上に、自分とフォローしているユーザーの投稿を表示させる事ができる、
+Twitterの様なサイトです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+◆機能
+・ログイン
+・メッセージの投稿
+・メッセージのお気に入り
+・ユーザーのフォロー
 
-Things you may want to cover:
+◆作成意図
+Railsにおける、MVCモデルを活用の学習を目的に作成したサイトです。
+簡易的なDBの利用や、bootstrapの利用、基礎的なライブラリの利用など、
+低コストでWebサイトを作成する方法を学習しました。
 
-* Ruby version
+最終的な目標としては、以下にデザインしたコミュニティサイトの完成を目指しています。
+▼サーチコム
+https://cacoo.com/diagrams/JvHy1dlSpk3lMrZO/BBCC7
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+◆使用方法
+①[Sign up now!]ボタンから進み、それぞれの入力欄に適当な文字列を入力してください。
+※登録したメールアドレス等はログインにのみ使用するものであり、認証などは行わない為、実在しないものでも可能です。
+②ログインに成功すると、ホーム画面にに遷移します。
+入力欄に投稿する内容を入力し、[Post]ボタンを押下する事でメッセージを投稿できます。
+③右上の[Users]ボタンから、ユーザー一覧画面に進み、任意のユーザーをフォローする事で、
+TL上にフォローしたユーザーの投稿を表示させることができます。
+④フォローしたユーザーや、お気に入りに追加した投稿は、「ユーザー」トグルから、
+[My profile]ボタンを押下し、プロフィール画面に進む事で、それらの管理を行えます。
